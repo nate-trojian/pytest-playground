@@ -1,5 +1,12 @@
-def send_msg(channel, msg):
-    print("TECHIO> message --channel \"{}\" \"{}\"".format(channel, msg))
+def square(x):
+    """Returns the square of x.
+
+    >>> square(2)
+    4
+    >>> square(-2)
+    4
+    """
+    return ""
 
 
 def success():
@@ -13,7 +20,6 @@ def fail():
 if __name__ == "__main__":
     import doctest
     t = doctest.testmod()
-    print(t)
     if t.failed:
         fail()
     else:
