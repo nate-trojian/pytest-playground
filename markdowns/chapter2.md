@@ -25,10 +25,8 @@ from unittest import mock
 def func():
     return 3
 
-# Creating our mock
-mock_func = mock.MagicMock(return_value=4)
 # Overwriting the function with our mock
-mock.patch("func", mock_func).start()
+mock.patch("__main__.func", return_value=4).start()
 # Did it work?
 assert func() == 4
 ```
