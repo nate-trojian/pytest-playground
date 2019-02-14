@@ -9,7 +9,7 @@ However, with a little practice, this will become as second nature as coding the
 There are four different types of tests,
 each depending on the granularity of code being tested, as well as the goal of the test.
  
-##Unit Tests
+## Unit Tests
 
 This tests specific methods and logic in the code.
 This is the most granular type of test.
@@ -22,7 +22,7 @@ def test_func():
     assert func() == 1
 ```
 
-##Feature Tests
+## Feature Tests
 
 This tests the functionality of the component.
 A collection of unit tests may or may not represent a Feature test.
@@ -38,7 +38,7 @@ def test_new_endpoint():
     assert result.body = "Hello World"
 ```
 
-##Integration Tests
+## Integration Tests
 
 This tests the entire application, end to end.
 The goal is to guarantee the stability of the application.
@@ -59,7 +59,7 @@ def test_MySystem():
     assert not system.handle_message(bad_message)
 ```
 
-##Performance Tests
+## Performance Tests
 
 This tests the efficiency of a piece of code.
 The size of the code being tested can range from a method to the whole application.
