@@ -9,9 +9,21 @@ Mocking allows you to overwrite an object and control it's behavior while testin
 
 ## Doctests
 
-@[Can you make this doctest pass?]({"stubs": ["doc_test.py"], "command": "python3 doc_test.py"})
+@[Can you make this doctest pass?]({"stubs": ["doc_test.py"], "command": "python3 -m doctest doc_test.py"})
 
 ## Mocking
 
 Mocking is Python's most powerful testing tool.
-A Mock Object completely overwrites 
+A Mock Object completely overwrites the object you specify.
+This can be a class or a method.
+
+```python runnable
+import unittest.mock
+
+def func():
+    return 3
+
+mock_func = mock.MagicMock(return_value=4)
+mock.patch(func, mock_func).start()
+func()
+```
