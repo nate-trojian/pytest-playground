@@ -1,6 +1,3 @@
-from .doctest import square
-
-
 def send_msg(channel, msg):
     print("TECHIO> message --channel \"{}\" \"{}\"".format(channel, msg))
 
@@ -15,7 +12,7 @@ def fail():
 
 if __name__ == "__main__":
     import doctest
-    t = doctest.testmod()
+    t = doctest.testfile("doctest.py")
     if t.failed:
         fail()
     else:
