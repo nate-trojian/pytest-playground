@@ -4,6 +4,8 @@ plan:
   statement: markdowns/chapter1.md
 - title: Testing in Python
   statement: markdowns/chapter2.md
+- title: In Depth Mocking Example
+  statement: markdowns/chapter3.md
 projects:
   python:
     root: /python-project
