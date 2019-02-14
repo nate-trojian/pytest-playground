@@ -18,6 +18,7 @@ A Mock Object completely overwrites the object you specify.
 This can be a class or a method.
 Mock Objects have two special fields, return_value and side_effect.
 Both of these fields effect the result of when a Mock is called.
+
 For example:
 ```python runnable
 from unittest import mock
