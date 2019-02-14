@@ -18,12 +18,12 @@ A Mock Object completely overwrites the object you specify.
 This can be a class or a method.
 
 ```python runnable
-import unittest.mock
+from unittest import mock
 
 def func():
     return 3
 
 mock_func = mock.MagicMock(return_value=4)
 mock.patch(func, mock_func).start()
-func()
+assert func() == 4
 ```
