@@ -1,4 +1,4 @@
-from universe import count_all_stars
+from .universe import count_all_stars
 import builtins
 
 

@@ -1,10 +1,10 @@
 title: Python Project
 plan:
 - title: Welcome
-  statement: markdowns/welcome.md
+  statement: markdowns/chapter1.md
 projects:
   python:
     root: /python-project
     runner:
-      name: python
+      name: grihabor/pytest
       version: '3'
