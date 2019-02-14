@@ -24,6 +24,7 @@ def func():
         return t.hello()
 ```
 
+::: Answer
 ``` python
 def test_TestWith():
     test_hello_mock = mock.MagicMock(return_value=2)
@@ -45,3 +46,4 @@ def test_TestWith():
     assert ret == 2
     patcher.stop()
 ```
+:::
