@@ -12,7 +12,7 @@ def fail():
 
 if __name__ == "__main__":
     import doctest
-    t = doctest.testfile("doctest.py")
+    t = doctest.testmod()
     if t.failed:
         fail()
     else:
