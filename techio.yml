@@ -1,7 +1,9 @@
 title: Python Project
 plan:
-- title: Welcome
+- title: The Basics
   statement: markdowns/chapter1.md
+- title: Testing in Python
+  statement: markdowns/chapter2.md
 projects:
   python:
     root: /python-project
