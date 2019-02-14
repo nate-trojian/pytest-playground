@@ -11,4 +11,4 @@ This is especially useful for test-driven development, where you have explicit e
 Mocking
 
 ## Doctests
-@[Can you make this doctest pass?]({"stubs": ["doctest/doctest.py"], "command": "python3 doctest/test_doctest.py"})
+@[Can you make this doctest pass?]({"stubs": ["doctest/doc_test.py"], "command": "python3 doctest/test_doctest.py"})
