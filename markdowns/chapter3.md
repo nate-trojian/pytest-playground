@@ -37,7 +37,7 @@ def test_TestWith():
         __enter__=test_enter_mock,
         __exit__=mock.MagicMock(return_value=None)
     )
-    patcher = mock.patch("scratch_7.new_test", return_value=test_mock)
+    patcher = mock.patch("__main__.new_test", return_value=test_mock)
     patcher.start()
     ret = func()
     test_mock.__enter__.assert_called_once()
